@@ -6,6 +6,7 @@
 
 # Ignore bundler config
 /.bundle
+/test
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
@@ -13,7 +14,8 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-/.idea
- /Gemfile.lock
- /tmp
- **/.gitkeep
+.idea
+tmp
+**/.gitkeep
+app/models/.gitkeep
+/test
