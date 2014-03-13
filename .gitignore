@@ -6,6 +6,7 @@
 
 # Ignore bundler config
 /.bundle
+/test
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
@@ -14,5 +15,7 @@
 /log/*.log
 /tmp
 .idea
- tmp
- **/.gitkeep
+tmp
+**/.gitkeep
+app/models/.gitkeep
+/test
