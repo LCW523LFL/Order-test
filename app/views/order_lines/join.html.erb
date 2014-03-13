@@ -1,0 +1,34 @@
+
+<h>显示此用户的订单列表详情</h>
+ <br>
+ <br>
+<table>
+  <tr>
+    <td>
+      订单ID
+    </td>
+    <td>
+      订单编号
+    </td>
+    <td>
+      商品名字
+    </td>
+    <td>
+      商品详情
+    </td>
+    <td>
+      订单时间
+    </td>
+    </tr>
+  <tr>
+    <% @order_lines.each do |order_line|%>
+        <tr>
+        <% order_line.attributes.each do |k,v| %>
+           <td><%= v%></td>
+        <%end %>
+      <tr>
+    <%end %>
+  </tr>
+</table>
+<% link_to 'Back',%>
+

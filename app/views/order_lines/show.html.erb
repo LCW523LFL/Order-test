@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @order_line.id %>
+</p>
+
+<p>
+  <b>User_id:</b>
+  <%= @order_line.user_id %>
+</p>
+
+<p>
+  <b>Num:</b>
+  <%= @order_line.num %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%= @order_line.time %>
+</p>
+
+<p>
+  <b>Items:</b>
+  <%= @order_line.items %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @order_line.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_order_line_path(@order_line) %> |
+<%= link_to 'Back', order_lines_path %>
+<br>  </br>
+<%= link_to '显示该订单的商品详情', join_order_line_path(@order_line) %>

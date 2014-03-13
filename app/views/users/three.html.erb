@@ -1,0 +1,14 @@
+
+<h>显示此用户的订单商品列表详情</h>
+   <br> <br>
+ <table>
+   <%= 1%>
+    <% @users.each do |user|%>
+        <tr>
+          <% user.attributes.each do|k,v| %>
+        <td> <%= k +":"%></td>
+        <td> <%= v%>     </td>
+        </tr>
+              <%end%>
+    <%end %>
+ </table>
